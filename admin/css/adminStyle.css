@@ -1,0 +1,455 @@
+#bdrStyle
+{
+  margin: 5px;
+  color: #404040;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.banner
+{
+	 width: 100%;
+	 height: 80px;
+	 margin: 0px;
+	 padding: 0px;	 
+}
+
+#menusection
+{
+	position: relative;		
+	width: 150px;
+	background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+	padding: 5px;
+	border: 1px #ffffff outset;	 
+}
+
+#menulist a
+{
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+#menulist, #menulist ul, #menulist li
+{
+	margin: 0px;
+	padding: 0px;	
+	list-style-type: none;	
+}
+
+#menulist li { float: left;  }
+
+#menulist li a
+{
+ 	color: #ffffff;	
+ 	font-size: 20px;
+}
+
+#menulist li a:hover
+{
+color: #FFFF00;
+background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+}
+
+#menulist li a:active
+{
+color: #cccccc;
+background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+border: 1px #ffffff inset;
+}
+
+#submenulist { display: none; }
+#submenulist li { float: none; }
+
+#submenulist li a
+{
+padding: 0px;
+margin: 0px;
+color: #ffffff;
+background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+border: 1px #ffffff outset;
+}
+
+#menulist li:hover #submenulist
+{
+display: block;
+position:absolute;
+padding: 6px 0px 0px 0px; /*top, right, bottom, left*/
+}
+
+#menulist li:hover #submenulist li a
+{
+display: block;
+width: 16em;
+border: none;
+padding: 5px;
+}
+
+#submenulist li a:before 
+{ 
+	content: url('images/marker_3.gif'); 
+}
+#midsection
+{
+	clear:left;
+	width:100%;
+	padding: 0px 150px 0px 170px;
+	border: 2px;
+}
+
+.container
+{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;		
+}
+
+.login, .memberInfo, .doctorInfo, .serviceInfo, .searchInfo, .adminInfo
+{
+	position: relative;
+	padding: 5px 5px 5px 5px;
+	width: 200px;
+	background: #E6E6FA;
+	border-radius: 3px;
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login:before, .memberInfo:before, .doctorInfo:before, .serviceInfo:before, .searchInfo:before, .adminInfo:before 
+{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.login h1, .memberInfo h1, .doctorInfo h1, .serviceInfo h1, .adminInfo h1, .searchInfo h1, .adminInfo h1
+{
+	/*margin: -10px -10px 11px;*/
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #555;
+	text-align: center;
+	text-shadow: 0 1px white;
+	background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+	border-bottom: 1px solid #cfcfcf;
+	border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.login p,.memberInfo p, .doctorInfo p, .serviceInfo p, .adminInfo p{
+  margin: 10px 0 0;
+}
+
+.login p:first-child {
+  margin-top: 0;
+}
+
+.login p label, .leftcontainer p, .rightcontainer p {
+  font-size: 16px;
+  color: #003366; /* Gray code-> color: #888;*/  
+}
+
+.login input[type=text], .login input[type=password] {
+  width: 200px;
+}
+
+.login p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+
+.login p.remember_me label {
+  font-size: 16px;
+  color: #777;
+  cursor: pointer;
+}
+
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.login p.submit {
+  text-align: right;  
+}
+
+.register {
+	margin-top:15px;
+	width: 230px;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px #2a85a1;
+	color: #404040;
+}
+
+.register a {
+  text-decoration: none;
+  color: #CC0033; /*for dark pink color*/
+} 
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+input {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 120px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+input[type=text]:focus, input[type=password]:focus, select:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+
+input[type=submit], input[type=reset] {
+  padding: 0 18px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: maroon;
+  text-shadow: 0 1px #e3f1f1;
+  background: white; /* #cde5ef */
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 15px;
+  outline: 0;
+  box-sizing: content-box;
+  background-image: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15); 
+}
+
+select {
+  margin: 5px;
+  width: 110px;
+  height: 25px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+ }
+
+.adminselect {
+  margin: 5px;
+  width: 110px;
+  height: 25px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+table
+{
+	font-size: 16px;
+}
+
+table a
+{
+	text-decoration:none;
+	color: #003366;
+	font-size:13px;
+	line-height:17px;
+}
+
+table a:hover
+{
+	text-decoration:underline;
+}
+
+.news
+{
+	padding:10px;
+
+}
+
+/* #newstitle
+{
+	 color:#9C6888;
+	 font-size:18px;
+	 font-weight:bold;
+	 padding: 10px;
+	 text-align:center;
+ 	 border-color:#404040;
+	 box-shadow:2px -2px 10px 0px #003366;
+}
+  */
+  
+ #newstitle
+{
+	 color:#003366;
+	 font-size:18px;
+	 font-weight:bold;
+	 padding: 10px;
+	 text-align:center;
+ 	 border-color:#404040;
+	 box-shadow:2px -2px 5px 0px #03637E;
+	 background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);	
+}  
+  
+hr
+{	
+	color: aqua;
+}
+
+.icon
+{
+	 width: 190px;
+	 height: 140px;
+	 margin-right: 5px;
+	 float:left;
+}
+
+span
+{
+	font-size: 14px;
+	line-height:20px;	
+}
+
+span section
+{
+	text-align:justify;
+	font-size:14px;	
+	margin-top: 5px;
+}
+
+span a
+{
+	font-weight: bold;
+	font-size:15px;		
+}
+
+span a:hover
+{
+	color:#CC0033;
+}
+
+.readmore
+{
+	text-align: right;
+	color: #CC0033;
+	font-size: 12px;
+}
+
+.readmore:hover
+{
+	text-decoration:underline;
+}
+
+#footersection
+{
+  margin: 10px 0 0 0;
+  padding: 10px;
+  height: 68px;
+  color: #003366;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);	
+}
+
+#footersection p
+{
+	text-align:center;
+	margin-top:12px;
+	line-height:23px;
+}
+
+#footersection p a
+{
+	text-decoration:none;
+	color:  #003366;	
+}
+#footersection p a:hover
+{
+	text-decoration:underline;
+	color: #CC0033;	
+}
+
+#title{
+	color: #003366;
+	text-align: center;
+	background: linear-gradient(to bottom, #F0FFF0, #B0C4DE);
+}
+
+@keyframes blink {
+to { color: #FF1493; }
+}
+
+#viewColor {
+color: blue;
+animation: blink 1s steps(2, start) infinite;
+}
+
+.infoRow a{
+	display: block;
+	color: #003366; /* #800080 */
+	font-weight: bolder;			
+	/* background: linear-gradient(to bottom, #E6E6FA, #4B0082); */
+	padding: 5px;
+	width: 100%;
+}
+
+.infoRow a:hover {
+	display: marker;
+	text-decoration: none;
+	color: lightyellow;
+	background: linear-gradient(to bottom, gray, darkseagreen, lightseagreen);
+}
+
+#aboutUs
+{font-size: 16px;
+color: #03637E;/*#8470FF;	*/
+}
+
+#notification_count
+{
+/* padding: 1px 7px 3px 7px;
+background: green;
+color: white;
+font-weight: bold;
+margin-left: 5px;
+border-radius: 9px;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+position: static;
+margin-top: -5px;
+font-size: 11px; */
+ 		top: 10px;
+        right: -80px;
+        padding: 1px 6px 1px 4px;
+        background-color: red; 
+        color: white;
+        font-weight: bold;
+        font-size: 15px; 
+        border-radius: 30px;
+}
