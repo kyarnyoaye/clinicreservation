@@ -1,0 +1,9 @@
+/* $Id: small.css,v 1.1 2008/08/25 03:31:24 ps3-maytar Exp $ */
+.calendar {
+  border-width: 1px;
+  font-size: 9px;
+}
+
+.calendar table {
+  font-size: 9px;
+}
